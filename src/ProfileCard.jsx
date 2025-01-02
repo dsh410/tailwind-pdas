@@ -1,12 +1,12 @@
 
 
 // eslint-disable-next-line react/prop-types
-const ProfileCard = ({ aiAssistant }) => (
+const ProfileCard = ({ aiAssistant }) => {
   return (
 
-    {
+
       // eslint-disable-next-line react/prop-types
-      aiAssistant.map(ai => ( 
+
         <div className="bg-white">
           {/* <!-- Header and Page Header --> */}
           <div className="relative">
@@ -188,7 +188,7 @@ const ProfileCard = ({ aiAssistant }) => (
               <div className="mx-auto max-w-2xl space-y-12 px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:space-y-0 lg:px-8">
                 <div className="relative flex flex-col rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900">{ai.name}</h3>
+                    <h3 className="text-xl font-semibold text-gray-900">some</h3>
                     <p className="mt-4 flex items-baseline text-gray-900">
                       <span className="text-5xl font-bold tracking-tight">$24</span>
                       <span className="ml-1 text-xl font-semibold">/month</span>
@@ -228,7 +228,7 @@ const ProfileCard = ({ aiAssistant }) => (
                 </div>
                 <div className="relative flex flex-col rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900">{ai.name}</h3>
+                    <h3 className="text-xl font-semibold text-gray-900">some</h3>
 
                     <p className="mt-4 flex items-baseline text-gray-900">
                       <span className="text-5xl font-bold tracking-tight">$32</span>
@@ -517,9 +517,8 @@ const ProfileCard = ({ aiAssistant }) => (
             </div>
           </footer>
         </div>
-      ))
-    }
+
   );
 
-
+}
 export default ProfileCard;
