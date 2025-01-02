@@ -3,9 +3,11 @@
 // eslint-disable-next-line react/prop-types
 const ProfileCard = ({ aiAssistant }) => {
   return (
+<>
+{
+        // eslint-disable-next-line react/prop-types
+aiAssistant.map(ai => console.log(ai.name[1]))}
 
-
-      // eslint-disable-next-line react/prop-types
 
         <div className="bg-white">
           {/* <!-- Header and Page Header --> */}
@@ -517,8 +519,7 @@ const ProfileCard = ({ aiAssistant }) => {
             </div>
           </footer>
         </div>
-
+        </>
   );
-
 }
 export default ProfileCard;
